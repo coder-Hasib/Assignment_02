@@ -1,3 +1,181 @@
-h1{
-    color: aqua;
+
+        /*======== google font link=========  */
+@import url('https://fonts.googleapis.com/css2?family=PT+Serif:wght@700&display=swap');
+body{
+    font-family: 'PT Serif', serif;
+    margin: 0;
+    padding: 0;
+}
+.main-continer{
+  display: flex;
+  background-color: #2D25A0 ;
+  justify-content: center;
+  align-items: center;
+  width: 1350px;
+}
+.header-details{
+  width: 675px;
+  padding-left: 80px;
+  font-size: 35px;
+  color: aliceblue;
+  
+}
+.header-img{
+  width: 555px;
+  padding: 153px;
+}
+
+.header-details span a {
+  width: 200px;
+   background-color:#E02C6D;
+  padding:10px 24px;
+  text-decoration: none;
+  color: white;
+  font-size: large;  
+}
+.header-details span a:hover{
+  color: white;
+  background-color: orange;
+  width: 250px;
+  transition: width 4s;
+}
+  /* players gallary start from here  */
+ 
+.head-container{
+  width: 1150px;
+  margin: 10px auto;
+  
+}
+  .container{
+    background-color:whitesmoke;
+    display: grid;
+    grid-template-columns: repeat(3,1fr);
+    grid-template-rows: repeat(4,1fr);
+    grid-gap: 30px;
+  }
+  .container article{
+    width: 330px;
+    background-color: #f5f3f3;
+    padding: 10px;
+    border: 2px groove #eeeeee;
+  }
+  article img{
+    width: 100%;
+  }
+
+  /* table from here  */
+  .point-tabale{
+    width: 900px;
+    margin: 0 auto;
+  }
+
+.content-table{
+  border-collapse: collapse;
+  margin: 12px 0;
+  font-size: 1.5em;
+  min-width: 800px;
+}
+.content-table thead tr{
+  background-color: #009879;
+  color: white;
+  text-align: center;
+  font-weight: bold;
+
+}
+.content-table tbody tr td{
+  font-size: smaller;
+
+}
+.content-table th,
+.content-table td{
+  padding: 6px 10px;
+}
+.content-table tbody tr{
+  border: 2px unset white  ;
+}
+.content-table tbody tr:nth-of-type(even){
+  background-color: #c8c8c8;
+}
+.content-table tbody tr:last-of-type{
+  border-bottom: 2px solid #009879;
+}
+
+
+/* table end here  */
+  .contact {
+    background-color: #e0e0e0;
+    height: 833px;
+    max-width: 955px;
+  }
+  .form-title {
+    text-align: center;
+    padding-top: 30px;
+    font-family: "Ubuntu", sans-serif;
+    font-size: 35px;
+  }
+  .form-body {
+    max-width: 50%;
+    margin: 25px auto;
+  }
+  .form-input {
+    margin: 14px 0;
+    padding: 5px 13px;
+    width: 100%;
+    font-size: 19px;
+    border: 2px solid gray;
+    border-radius: 6px;
+    font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+  }
+
+  .footer-all{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+.footer-img img{
+    width: 484px;
+    height: 110px;
+}
+.footer-icon{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.footer-icon .fab{
+    align-self: center;
+    margin: 0px 14px;
+    font-size:32px;
+    color: grey;
+}
+/*-------------------------- media screen ---------------------*/
+
+/*----------------- ---------mobile device  -----------------------*/
+
+
+@media only screen and (max-width:668px)  {
+  
+  .main-continer{
+    display: flex;
+    flex-direction: column;
+    background-color: #2D25A0 ;
+    justify-content: center;
+    align-items: center;
+    width: 668px;
+  }
+  .container{
+    background-color:whitesmoke;
+    display: grid;
+    grid-template-columns: repeat(1,1fr);
+    grid-template-rows: repeat(1,1fr);
+    grid-gap: 30px; justify-content: center;
+    align-items: center;
+    width: 668px;
+  }
+  .point-tabale{
+    width: 100%;
+    align-items: center;
+    justify-content: center;
+  }
+
+
 }
